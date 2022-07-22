@@ -1,0 +1,236 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2rem;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE (Colors, Fonts, Backgrounds)
+  ========================================
+*/
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 62.5%;
+}
+
+body{
+  font: 1rem Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+nav{
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  line-height: 3.5rem;
+}
+
+.extraCrunch > h2{
+  font-size: 2.5rem;
+  font-weight: semi-bold;
+  font-height: 2rem;
+  color: #dfad47;
+}
+
+.extraCrunch > h3{
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+p{
+  font-size: 2rem;
+  color: #99a19f;
+  letter-spacing: 0.1rem;
+}
+
+.asideContainer, article h3{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.author, .date{
+  font-size: 1.25rem;
+  display: block;
+  padding: .5% 0;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.date{
+  font-weight: normal;
+}
+
+article > h2{
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 1px solid #99a19f;
+  padding-bottom: .5%;
+}
+
+  /*
+  ========================================
+  LAYOUT (Sizing and Layout of Main Elements)
+  ========================================
+*/
+main, .menu, .extraCrunch, aside{
+  float: left;
+}
+.menu{
+  width: 10%;
+  height: 100%;
+  position: fixed; 
+  padding: 1% 0.5%;
+  margin: 0 auto;
+}
+
+main{
+  width: 90%;
+  padding: 2% 1%;
+  margin-left: 10%;
+  padding-right: 15%;
+}
+
+.extraCrunch{
+  width: 60%;
+  padding: 0 2% 5% 2%;
+}
+
+aside{
+  width: 40%;
+  line-height: 2.5rem;
+  float: left;
+}
+
+.asideContainer{
+  padding: 2% 0 3% 0;
+  border-bottom: 1px solid #99a19f;
+}
+
+article{
+  clear: both;
+  width: 100%;
+  padding: 0 2%;
+}
+
+
+/*
+  ========================================
+  MODULE (specific styles targeting individual parts of the page, such as navigation or feature styles)
+  ========================================
+*/
+.logo{
+  height: 5rem;
+  padding: 1rem;
+}
+
+.join{
+  font-weight: bold;
+}
+
+.extraCrunch > img{
+  width: 100%;
+  padding: 2% 0;
+}
+
+article > section{
+  padding: 1% 0;
+  width: 33%;
+  float: left;
+}
+
+article > img{
+  width: 33%;
+  padding: 1% 1%;
+}
+/*
+  ========================================
+  STATE (styles are then used to augment or override other styles in the event that a module includes an alternate state)
+  ========================================
+*/
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #13af69;
+  transition: color .3s;
+}
+
+.asideContainer:hover{
+  color: #99a19f;
+  transition: color .3s;
+}
+.specialNav:hover{
+  color: #dfad47;
+  transition: .3s;
+}
+
+.extraCrunch:hover, .theLatest:hover{
+  opacity: .7;
+  transition: .3s;
+}
+/*
+  ========================================
+  THEME (could include styles based around the skin, or look and feel, of different modules)
+  ========================================
+*/
